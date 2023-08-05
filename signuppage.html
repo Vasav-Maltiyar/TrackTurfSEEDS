@@ -6,43 +6,47 @@
             justify-content: center;
             align-items: center;
         }
-
-        .container {
-            position: relative;
-        }
-
-        .login-container {
+        .signup-container {
             width: 300px;
             margin: 0 auto;
             padding: 20px;
             border: 1px solid #ccc;
             border-radius: 5px;
             background-color: rgba(255, 255, 255, 0.5);
-            height: 300px;
+            height: 400px; /* Adjust the height as needed */
+            overflow: auto; /* Add scrollbars if content exceeds the height */
         }
-
-        .login-container input[type="text"],
-        .login-container input[type="password"] {
+        .signup-container input[type="text"],
+        .signup-container input[type="tel"],
+        .signup-container input[type="password"],
+        .signup-container textarea {
             width: 100%;
             padding: 10px;
             margin-bottom: 10px;
             border: 1px solid #ccc;
             border-radius: 5px;
         }
-
-        .login-container button {
+        .signup-container button {
             width: 100%;
             padding: 10px;
-            background-color: #2E8B57;
+            background-color: #4CAF50;
+            color: #fff;
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            color: #fff; /* Set the text color to white */
+        }
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+           background-color: #2E8B57;
+            
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
         }
         
         .button-container button {
             width: 48%;
-            color: #fff; /* Set the text color to white */
         }
 
         .button-container {
@@ -63,23 +67,25 @@
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="signup-container"><center><h1><b>Sign Up</b></h1></center>
         
-        <div class="login-container"><center><h1><b>Login</b></h1></center>
-            
+        <div class="login-container">
             <div class="button-container">
-                <button style="background: linear-gradient(to right, #2E8B57, #1034A6);">Login Page</button>
-                <button>Sign Up Page</button>
+                <button>Login Page</button>
+                <button style="background: linear-gradient(to right, #2E8B57, #1034A6);">Sign Up Page</button>
             </div>
-            <input type="text" placeholder="Username" id="username" required="">
+        <form enctype="text/plain">
+            <input type="text" placeholder="Name" id="name" required="">
+            <input type="tel" placeholder="Phone Number" id="phone" required="">
             <input type="password" placeholder="Password" id="password" required="">
-            <button type="submit">Login</button>
-            <p></p>
-            <center>
-                <a href="signuppage.html">Don't have an account? Create one</a>
-            </center>
-        </div>
+            <textarea placeholder="Address" id="address" required=""></textarea>
+            <a href="file:///C:/Users/Admin/Desktop/Vasav%20social%20folder/index.html">
+                <button type="submit">Sign Up</button>
+            </a>
+        </form>
+  
+        
     </div>
 
 
-</body></html>
+</div></body></html>

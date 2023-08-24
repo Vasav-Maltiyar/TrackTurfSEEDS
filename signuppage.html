@@ -39,7 +39,7 @@
             width: 100%;
             padding: 10px;
            background-color: #2E8B57;
-            
+            align-items: center;
             border: none;
             border-radius: 5px;
             cursor: pointer;
@@ -62,7 +62,11 @@
         }
 
         .button-container a:hover {
-            text-decoration: underline;
+            text-decoration: none;
+        }
+        .signupbutton {
+            text-decoration: none;
+            color: white;
         }
     </style>
 </head>
@@ -72,16 +76,16 @@
         <div class="login-container">
             <div class="button-container">
                 <button>Login Page</button>
-                <button style="background: linear-gradient(to right, #2E8B57, #1034A6);">Sign Up Page</button>
+                <!--<button style="background: linear-gradient(to right, #2E8B57, #1034A6);">Sign Up Page</button>-->
             </div>
         <form enctype="text/plain">
             <input type="text" placeholder="Name" id="name" required="">
             <input type="tel" placeholder="Phone Number" id="phone" required="">
             <input type="password" placeholder="Password" id="password" required="">
             <textarea placeholder="Address" id="address" required=""></textarea>
-            <a href="file:///C:/Users/Admin/Desktop/Vasav%20social%20folder/index.html">
-                <button type="submit">Sign Up</button>
-            </a>
+            
+            <button type="submit" ><a href="homepage.html" class="signupbutton">Sign Up</a></button>
+            
         </form>
   
         
